@@ -1,0 +1,324 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom: 2px solid #ff0000;
+}
+
+#navbar #logo {
+    font-size: 1.5em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#navbar #nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar #nav-links li {
+    margin-left: 20px;
+}
+
+#navbar #nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+#navbar #nav-links a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    background: url('./public/backgroundimages.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#hero-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+#play-now {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#play-now:hover {
+    background-color: #cc0000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #111;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#features h2 {
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in-out;
+}
+
+.feature-box {
+    background-color: #222;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box p {
+    color: #ccc;
+}
+
+/* Special Background Image Section */
+#background-image-section {
+    position: relative;
+    background: url('./public/backgroundimages.jpeg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.background-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+#background-image-section h2 {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in-out;
+}
+
+#background-image-section p {
+    font-size: 1.2em;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Download Section */
+#download {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#download h2 {
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in-out;
+}
+
+#download p {
+    color: #ccc;
+}
+
+#download-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#download-button:hover {
+    background-color: #cc0000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Join Community Section */
+#join-community {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#join-community h2 {
+    color: #ff0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1s ease-in-out;
+}
+
+#join-community p {
+    color: #ccc;
+}
+
+#join-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#join-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Add your existing styles here */
+
+/* Footer Section */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.social-media a {
+    color: red; /* Set icon color to red */
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff4d4d; /* Slightly brighter red on hover */
+}
+
+/* Example of additional styling */
+.social-media i {
+    transition: transform 0.3s;
+}
+
+.social-media a:hover i {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+/* Other styles */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+    
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #features h2, #download h2, #background-image-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+    
+    #join-button, #play-now, #download-button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
